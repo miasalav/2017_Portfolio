@@ -34,17 +34,15 @@ $('.columnContainer').slick({
   ]
 });
 
-function intervalBounce(){
+
   setInterval(function() {
       $('.scroll-animation').effect('bounce', 2000)
       console.log('this works');
   }, 3000);
 
-  };
 
-intervalBounce();
 
-function offCanvasNav(){
+
   $(function() {
 
     var special = ['reveal', 'top', 'boring', 'perspective', 'extra-pop'];
@@ -72,13 +70,10 @@ function offCanvasNav(){
 
   });
 
-};
 
-offCanvasNav();
+    $(document).foundation();
 
-   $(document).foundation();
 
-function modalTrigger(){
 
     var projectArray = document.querySelectorAll('.project-wrapper');
     var modalArray = document.querySelectorAll('.modal');
@@ -114,9 +109,7 @@ function modalTrigger(){
              
     } 
 
-};
 
-modalTrigger();
     
 });
 

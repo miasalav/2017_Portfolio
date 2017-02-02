@@ -29,9 +29,9 @@
     .project-wrapper:nth-of-type(1) {
         background: url('../../images/project3-1.jpg') no-repeat;
         background-size: cover;
-        background-position: center center;
-        
+        background-position: center center;        
     }
+    
     .project-wrapper:nth-of-type(2) {
         background: url('../../images/project2-1.jpg') no-repeat;
         background-size: cover;
@@ -44,10 +44,9 @@
     }
     .project-wrapper:nth-of-type(4) {
         background: url('../../images/project4-1.jpg') no-repeat;
-        background-size: cover;
-
-        
+        background-size: cover;        
     }
+
     .project-wrapper:nth-of-type(5) {
         background: url('../../images/design-1.jpg') no-repeat;
         background-size: cover;
@@ -195,15 +194,16 @@
         {
             text-transform: uppercase;
             color: white;
-            display: block;
             text-align: center;
             transition: all 0.4s ease;
-            font-size: 0.95em;
-            width: 45%;
+            font-size: 0.85em;
+            display: block;
             margin: 0 auto;
             margin-bottom: 1em;
             padding: 12px;
+            letter-spacing: 2px;
             background-color: rgba(68,66,59, 0.7);
+            
         }
 
         a:hover
@@ -312,6 +312,22 @@
 
 }
 
+
+@media(min-width: 64em){
+  
+   .project-text
+   {
+       section
+       {
+           a
+           {
+               width: 60%;
+           }
+       }
+   }
+
+}
+
 @media(max-width: 64em){
    .project-info
    {
@@ -320,12 +336,38 @@
 
    }
 
+   .project-text
+   {
+       section
+       {
+           a
+           {
+               width: 35%;
+           }
+       }
+   }
+
    .modal-wrapper
    {
        overflow: scroll;
        overflow-x: hidden;
 
    }
+}
+
+@media(max-width: 40em){
+  
+   .project-text
+   {
+       section
+       {
+           a
+           {
+               width: 75%;
+           }
+       }
+   }
+
 }
 
 @media(max-width: 500px){
