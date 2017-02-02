@@ -1,0 +1,43 @@
+footer
+{
+    position: fixed;
+    z-index: 2;
+    left: 10%;
+    bottom: 30px;
+    width: 100vh;
+    
+
+    p
+    {
+    transform: rotate(-90deg);
+	transform-origin: left top 0;
+    font-size: 0.8em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    }
+}
+
+
+@media(min-width: 800px) and (max-width: 999px){
+    
+    footer
+    {
+        left: 10%;
+    } 
+}
+
+@media(min-width: 400px) and (max-width: 600px){
+    
+    footer
+    {
+        left: 50px;
+    } 
+}
+
+@media(min-width: 300px) and (max-width: 400px){
+    
+    footer
+    {
+        left: 10px;
+    } 
+}

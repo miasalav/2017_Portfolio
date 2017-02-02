@@ -1,0 +1,112 @@
+.contact-section
+{
+    height: 100vh;
+    background-color: $base-color;
+
+    .contact-text
+    {
+        h2
+        {
+            font-size: 3em;
+            margin-bottom: 0.3em;
+        }
+        p
+        {
+            font-size: 1em;
+        }
+    }
+}
+
+.contact-form-wrapper
+{
+    border-left: 1px solid black;
+}
+.contact-form
+{
+    margin-left: 2em;
+    input, textarea
+    {
+        border-radius: 0px;
+        background-color: $base-color;
+        border: 1px solid #000;
+        color: black;
+        font-family: $base-font-family;
+    }
+
+    input:focus
+    {
+        background-color: $base-secondary-color;
+    }
+
+    textarea:focus
+    {
+        background-color: $base-secondary-color;
+    }
+
+    textarea
+    {
+        height: 150px;
+    }
+
+    input[type=submit]{
+        padding: 8px 10px 8px 10px;
+        letter-spacing: 2px;
+    }
+
+::-webkit-input-placeholder { color: #000; }
+:-moz-placeholder { color: #000;}
+::-moz-placeholder {color: #000;}
+:-ms-input-placeholder {color: #000;}
+    
+
+}
+
+.sm-icons
+{
+    margin-top: 1em;
+    li
+    {
+        display: inline; 
+        margin-right: 15px;
+    }
+
+    a
+    {
+         color: $base-font-color;
+        font-size: 2em;
+         opacity: 0.8;
+    }
+
+    li a:hover
+    {
+        color: grey;
+    }
+}
+
+@media(max-width: 406px){
+
+.contact-section
+{
+    .contact-text
+    {
+        h2
+        {
+            font-size: 2.5em;
+            margin-bottom: 0.3em;
+        }
+        p
+        {
+            font-size: 0.8em;
+        }
+    }
+
+    .sm-icons
+    {
+        a
+        {
+            font-size: 1.75em;
+           
+        }
+    }
+}
+}

@@ -1,0 +1,15 @@
+@import "partials/base";
+@import "partials/fonts";
+@import "partials/header";
+@import "partials/footer";
+@import "partials/home-content";
+@import "partials/work-section";
+@import "partials/about-section";
+@import "partials/contact-section";
+
+@mixin vendor-prefixes($property, $value) {
+        -webkit-#{$property}: $value;
+        -moz-#{$property}: $value;
+        -ms-#{$property}: $value;
+        -o-#{$property}: $value;
+}

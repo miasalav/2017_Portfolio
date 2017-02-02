@@ -1,0 +1,149 @@
+// Base Font
+$base-font-family: 'Inconsolata', monospace;
+$secondary-font-family: 'phosphorusregular';
+$secondary-font-variation: 'phosphorus_selenideregular';
+$base-font-weight: 300;
+$base-font-size: 16px;
+$base-color: #e9e1c8;
+$base-secondary-color: #d4cdbb;
+$base-font-color: #44423b;
+$footer-text-color: #c2c2c2;
+$base-background-color: black;
+$break-tablet: 600px;
+$break-desktop: 1000px;
+
+
+body
+{
+   background-color: $base-color; 
+}
+
+.hidden
+{
+    display: hidden;
+}
+
+.show
+{
+    display: block;
+}
+.border
+{
+    background-color: $base-color;
+    z-index: 2;
+    height: 100vh;
+    width: 8.5%;
+
+}
+
+.border.left
+    {
+        border-right: 1px solid black;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+.border.right
+    {
+        border-left: 1px solid black;
+        position: fixed;
+        top: 0;
+        right: 0;
+        
+        .detail-box1
+        {
+            position: absolute;
+            left: 0;
+            top: 75px;
+            width: 35px;
+        }
+    }
+
+.main-content
+{
+    height: 100vh;
+
+}
+
+
+a
+{
+    color: $base-font-color;
+}
+p
+{
+     font-family: $base-font-family;
+    color: $base-font-color;
+    font-weight:500;
+    font-size: 1em;
+    letter-spacing: 1px;
+}
+
+h2
+{
+    font-family: $base-font-family;
+    color: $base-font-color;
+    font-weight:600;
+    font-size: 2em;
+    letter-spacing: 2px;
+}
+
+h3
+{
+    font-family: $base-font-family;
+    color: $base-font-color;
+    font-weight:600;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+
+}
+
+h4
+{
+    font-family: $base-font-family;
+    color: $base-font-color;
+    font-weight:600;
+    font-size: 1.3em;
+    letter-spacing: 2px;
+}
+
+li
+{
+    font-family: $base-font-family;
+    color: $base-font-color;
+    font-weight: 500;
+    font-size: 0.8em;
+    letter-spacing: 1px;
+}
+
+a
+{
+    font-family: $base-font-family;
+    color: $base-font-color;
+    font-weight: 600;
+    font-size: 0.8em;
+    letter-spacing: 1px;
+}
+	
+::-webkit-scrollbar-track {
+      background-color: #b46868;
+} /* the new scrollbar will have a flat appearance with the set background color */
+ 
+::-webkit-scrollbar-thumb {
+      background-color: rgba(0, 0, 0, 0.2); 
+} /* this will style the thumb, ignoring the track */
+ 
+::-webkit-scrollbar-button {
+      background-color: #7c2929;
+} /* optionally, you can style the top and the bottom buttons (left and right for horizontal bars) */
+ 
+::-webkit-scrollbar-corner {
+      background-color: black;
+} /* if both the vertical and the horizontal bars appear, then perhaps the right bottom corner also needs to be styled */
+
+@media(min-width: $break-desktop) {
+
+
+
+}

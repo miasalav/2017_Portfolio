@@ -1,0 +1,356 @@
+.work-section
+{
+    position: relative;
+    height: 100vh;
+    background-color: $base-color;
+    h2
+    {
+        margin-bottom: 1em;
+    }
+}
+
+ .columnContainer {
+        width: 100%;
+        height: 55vh;
+
+        button
+        {
+            color: black;
+        }
+    }
+    
+    .project-wrapper{
+        width: 100%;
+        -webkit-transition: width 0.4s linear;
+        transition: width 0.4s linear;
+    }
+    
+    
+    .project-wrapper:nth-of-type(1) {
+        background: url('../../images/project3-1.jpg') no-repeat;
+        background-size: cover;
+        background-position: center center;
+        
+    }
+    .project-wrapper:nth-of-type(2) {
+        background: url('../../images/project2-1.jpg') no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+    .project-wrapper:nth-of-type(3) {
+        background: url('../../images/project1-1.jpg') no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+    .project-wrapper:nth-of-type(4) {
+        background: url('../../images/project4-1.jpg') no-repeat;
+        background-size: cover;
+
+        
+    }
+    .project-wrapper:nth-of-type(5) {
+        background: url('../../images/design-1.jpg') no-repeat;
+        background-size: cover;
+        background-position: center center;
+        
+    }
+
+.modal
+{
+    display: none;
+    position: fixed; /* Stay in place */
+    z-index: 5; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    transition-timing-function: ease-in;
+    -webkit-transition-timing-function: ease-in;
+    -webkit-transition: -webkit-transform 0.8s;
+    transition: transform 0.8s;
+  
+}
+
+.close-button {
+    color: lightgrey;
+    float: right;
+    font-size: 4em;
+    font-weight: bold;
+    z-index: 3;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-content {
+    background-color: $base-secondary-color;
+    margin: auto;
+    box-shadow: 3px 3px 3px 3px  rgba(0, 0, 0, 0.1);
+    width: 80%;
+    height: 80%;
+    margin-top: 5%;
+    
+}
+
+.project-overlay
+{
+    -webkit-transition: -webkit-transform 1s;
+    transition: transform 1s;  
+     background-image: linear-gradient(rgba(0, 0, 0, 0.7) 0, rgba(0, 0, 0, 0.7) 100%);
+    display: none;
+    height: 50vh;
+  
+}
+.project-caption
+{
+    width: 80%;
+    margin-left: 10%;
+    h2 
+    {
+        color: white;
+        padding-top: 28%;
+        -webkit-transition: -webkit-transform 1s;
+        transition: transform 1s; 
+        margin-bottom: 0;   
+        font-weight: 700;
+        text-shadow: 1.5px 1.5px rgba(0, 0, 0, 0.5);  
+        font-family: $base-font-family;       
+    }
+
+     p
+     {        
+        text-transform: none;
+        font-size: 1em;
+        font-weight: 500;
+        color: white;
+        transition: 1s;
+        font-family: $base-font-family;
+        text-shadow: 1px 1px rgba(0, 0, 0, 0.5);  
+        margin-top: 0.5em;
+
+    }
+
+}
+
+
+.project-info{ 
+    margin-bottom: 2em;
+    overflow: scroll;
+    overflow-x: hidden;
+   
+   .project-title
+   {
+       background-color: $base-font-color;
+       margin-bottom: 1em;
+
+        h3
+        {
+            font-size: 1.8em;
+            margin-bottom: 1em;
+            text-transform: uppercase;
+            text-align: center;
+            margin-top: 1em;
+            font-family: $base-font-family;
+            letter-spacing: 1px;
+            text-transform: uppercase;               
+            color: white;
+        }
+   }
+}
+.project-text
+{
+    background-color: #ccc5b3;
+    margin-bottom: 1em;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+    
+    section
+    {
+        margin-top: 1em;
+        margin-bottom: 1.5em;
+
+        p
+        {
+            font-size: 0.95em;
+            margin-bottom: 2em;
+            letter-spacing: 0px;
+            line-height: 1.2em;
+            text-indent: 30px;
+        }
+        
+        .project-tools
+        {
+            text-align: center;
+            margin-bottom: 1em;
+            font-size: 0.85em;
+            text-indent: 0px;
+        }
+        a
+        {
+            text-transform: uppercase;
+            color: white;
+            display: block;
+            text-align: center;
+            transition: all 0.4s ease;
+            font-size: 0.95em;
+            width: 45%;
+            margin: 0 auto;
+            margin-bottom: 1em;
+            padding: 12px;
+            background-color: rgba(68,66,59, 0.7);
+        }
+
+        a:hover
+        {
+            background-color: rgba(68,66,59, 1);
+        }
+
+    }
+}
+
+.project-img-1
+{
+   background-size: cover;
+   background-image: url(../../images/project3-1.jpg);
+   background-position: center center;
+   height: 100%;
+}
+
+.project-img-2
+{
+   background-size: cover;
+   background-image: url(../../images/project2-1.jpg);
+   background-position: center center;
+   height: 100%;
+}
+
+.project-img-3
+{
+   background-size: cover;
+   background-image: url(../../images/project1-1.jpg);
+   height: 100%;
+}
+
+.project-img-4
+{
+   background-size: cover;
+   background-image: url(../../images/project4-1.jpg);
+   background-position: center center;
+   height: 100%;
+}
+
+.modal-wrapper
+{
+    height: 100%;
+    background-color: $base-secondary-color;
+}
+
+.modal-content.design-content
+{
+    overflow: scroll;
+    overflow-x: hidden;
+}
+.design-wrapper
+{
+    .design-info
+    {
+        
+        margin-bottom: 2em;
+
+       .project-title
+        {
+            background-color: $base-font-color;
+            margin-bottom: 1em;
+
+            h3
+            {
+                font-size: 1.8em;
+                margin-bottom: 1em;
+                text-transform: uppercase;
+                text-align: center;
+                margin-top: 1em;
+                font-family: $base-font-family;
+                letter-spacing: 1px;
+                text-transform: uppercase;               
+                color: white;
+            }
+
+        }
+    }
+}
+
+.design-section
+{
+     h4
+        {
+            margin-top: 0.6em;
+            margin-bottom: 0.6em;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            display: block;
+            padding: 5px;
+            background-color: $base-font-color;
+            color: white;
+        }
+
+}
+
+@media(max-width: 50em){
+   .project-info
+   {
+       h3{
+           font-size: 1.5em;
+       }
+
+   }
+
+}
+
+@media(max-width: 64em){
+   .project-info
+   {
+       overflow: none;
+       overflow-y: hidden;
+
+   }
+
+   .modal-wrapper
+   {
+       overflow: scroll;
+       overflow-x: hidden;
+
+   }
+}
+
+@media(max-width: 500px){
+    .project-caption
+    {
+        h2
+        {
+            font-size: 2em;
+        }
+        p
+        {
+            font-size: 1em;
+        }
+    }
+
+}
+
+@media(max-width: 440px){
+    .project-info
+    {
+        h3
+        {
+            font-size: 1.3em;
+        }
+       
+    }
+
+}
